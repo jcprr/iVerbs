@@ -5,4 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="TitleStyle" parent="AppBaseTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">25sp</item>
+     </style>
+
 </resources>
