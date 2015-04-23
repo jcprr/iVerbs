@@ -6,7 +6,7 @@
     </style>
 
 
-    <style name="TitleStyle" parent="AppBaseTheme">
+    <style name="TitleStyle" parent="AppTheme">
         <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
         <item name="android:textSize">25sp</item>

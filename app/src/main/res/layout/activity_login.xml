@@ -1,52 +1,59 @@
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:weightSum="20">
+    android:weightSum="20"
+    >
 
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="2"
         android:weightSum="2"
         android:paddingLeft="15dp"
         android:paddingTop="5dp"
         android:paddingRight="15dp"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:background="#ff1fa7e8">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="iTitulo"
+            android:text="iVerbs"
             android:id="@+id/textView"
             android:autoText="false"
             android:gravity="center_vertical"
             android:layout_weight="1"
             android:textSize="25dp"
             android:textIsSelectable="false"
-            style="@style/TitleStyle" />
+            style="@style/TitleStyle"
+            android:textColor="#FFFFFFFF"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
+            android:text="your  personal  trainer"
             android:id="@+id/textView2"
             android:layout_weight="1"
             android:gravity="center_vertical|right"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textColor="#FFFFFFFF"/>
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="14"
-        android:weightSum="2">
+        android:layout_weight="15"
+        android:weightSum="2"
+        android:background="@mipmap/fondo1">
+
+
 
         <ImageView
             android:layout_width="fill_parent"
@@ -57,47 +64,51 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:weightSum="10"
-            android:id="@+id/"
             android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Small Text"
+                android:text="Who are you?"
                 android:id="@+id/textView3"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:background="#FF78C700"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#FFFFFFFF"/>
 
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/listView"
-                android:layout_weight="4" />
+                android:layout_weight="6"
+                android:background="#FFF3F3F3"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Small Text"
-                android:id="@+id/textView4"
-                android:layout_weight="2" />
+
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:background="#FFF3F3F3">
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:id="@+id/imageButton" />
-    </LinearLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@mipmap/addusers"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
 </LinearLayout>
 
