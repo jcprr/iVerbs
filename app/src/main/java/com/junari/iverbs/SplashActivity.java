@@ -1,17 +1,37 @@
 package com.junari.iverbs;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.os.Handler;
 
 
 public class SplashActivity extends ActionBarActivity {
+
+    private final int SPLASH_TIME = 2500;
+    private static final int REQST_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        new Handler().postDelayed(new Runnable(){
+
+            public void run() {
+
+
+                Intent miIntent = new Intent(SplashActivity.this,LoginActivity.class);
+
+                SplashActivity.this.startActivity(miIntent);
+
+                SplashActivity.this.finish();
+
+            }
+
+        }, SPLASH_TIME);
 
     }
 
@@ -37,4 +57,16 @@ public class SplashActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+    }
+
 }
