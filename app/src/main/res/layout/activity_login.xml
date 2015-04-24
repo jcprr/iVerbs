@@ -16,12 +16,13 @@
         android:paddingTop="5dp"
         android:paddingRight="15dp"
         android:paddingBottom="5dp"
-        android:background="#ff1fa7e8">
+        android:background="#ff1fa7e8"
+        android:minHeight="20dp">
 
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="iVerbs"
             android:id="@+id/textView"
@@ -31,11 +32,11 @@
             android:textSize="25dp"
             android:textIsSelectable="false"
             style="@style/TitleStyle"
-            android:textColor="#FFFFFFFF"/>
+            android:textColor="#FFFFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="your  personal  trainer"
             android:id="@+id/textView2"
@@ -56,10 +57,13 @@
 
 
         <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/imageView"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@mipmap/logo"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -96,7 +100,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_gravity="bottom"
             android:layout_weight="3"
             android:background="#FFF3F3F3">
 
@@ -107,8 +110,10 @@
             android:src="@mipmap/addusers"
             android:scaleType="centerInside"
             android:adjustViewBounds="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_alignParentTop="false"
+            android:maxHeight="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp" />
         </RelativeLayout>
 </LinearLayout>
 
