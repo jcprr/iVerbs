@@ -70,7 +70,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:weightSum="10"
+            android:weightSum="13"
             android:gravity="center_vertical">
 
             <TextView
@@ -89,8 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/listView"
-                android:layout_weight="6"
-                android:background="#FFF3F3F3"/>
+                android:layout_weight="9"
+                android:background="#FFF3F3F3"
+                android:listSelector="@drawable/list_selector" />
 
 
         </LinearLayout>
@@ -113,7 +114,8 @@
             android:layout_alignParentTop="false"
             android:maxHeight="50dp"
             android:layout_centerInParent="true"
-            android:layout_margin="0dp" />
+            android:layout_margin="0dp"
+            android:background="#FFF3F3F3"/>
         </RelativeLayout>
 </LinearLayout>
 

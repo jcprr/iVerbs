@@ -5,6 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 public class LoginActivity extends Activity {
@@ -13,6 +16,35 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ListView l= (ListView)this.findViewById(R.id.listView);
+
+        ArrayList<UserItem> Users= new ArrayList<>();
+
+        UserItem u1= new UserItem();
+        u1.setIcon(R.mipmap.face1);
+        u1.setTitle("Julio Palacios Reyes");
+
+        UserItem u2= new UserItem();
+        u2.setIcon(R.mipmap.face2);
+        u2.setTitle("Ricardo Muñozurio");
+
+        UserItem u3= new UserItem();
+        u3.setIcon(R.mipmap.face3);
+        u3.setTitle("Sandovas Pepe Luis");
+
+        UserItem u4= new UserItem();
+        u4.setIcon(R.mipmap.face2);
+        u4.setTitle("Luiyi Contrerone$");
+
+
+        Users.add(u1);
+        Users.add(u2);
+        Users.add(u3);
+        Users.add(u4);
+
+
+        l.setAdapter( new MyUserAdapter(this,Users));
     }
 
 
