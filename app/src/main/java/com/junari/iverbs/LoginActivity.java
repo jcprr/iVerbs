@@ -34,7 +34,7 @@ public class LoginActivity extends Activity {
         u3.setTitle("Sandovas Pepe Luis");
 
         UserItem u4= new UserItem();
-        u4.setIcon(R.mipmap.face2);
+        u4.setIcon(R.mipmap.face1);
         u4.setTitle("Luiyi Contrerone$");
 
 
