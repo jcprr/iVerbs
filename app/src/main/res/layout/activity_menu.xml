@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" android:weightSum="8"
+    android:background="@mipmap/fondo2">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imvFaceUsr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/face2" />
+
+        <TextView
+            android:id="@+id/txvNombreUsr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="Ricardo" />
+
+    <ImageView
+        android:id="@+id/imvStars"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/estrellas" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/btnOp1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#ff1e90ff"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/help" />
+
+        <ImageButton
+            android:id="@+id/btnOp2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#ff1e90ff"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/btnOp3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#ff1e90ff"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/progress" />
+
+        <ImageButton
+            android:id="@+id/btnOp4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#ff1e90ff"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/my_lists" />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
