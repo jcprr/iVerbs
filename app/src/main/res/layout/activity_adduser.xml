@@ -1,8 +1,8 @@
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:weightSum="20"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical"
+               android:weightSum="20"
     >
 
 
@@ -56,7 +56,6 @@
 
 
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -72,39 +71,88 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:weightSum="13"
+            android:weightSum="26"
             android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Who are you?"
+                android:text="Fill your profile!"
                 android:id="@+id/textView3"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:background="#FF78C700"
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:textColor="#FFFFFFFF"/>
 
-            <ListView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:id="@+id/listView"
-                android:layout_weight="9"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="User Name"
+                android:id="@+id/textView4"
+                android:layout_weight="2"
                 android:background="#FFF3F3F3"
-                android:listSelector="@drawable/list_selector" />
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#FF000000"/>
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/editText"
+                android:layout_weight="4"
+                android:background="#FFF3F3F3"
+                android:textColor="#FF000000"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Languaje"
+                android:id="@+id/textView5"
+                android:layout_weight="2"
+                android:background="#FFF3F3F3"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#FF000000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/editText1"
+                android:layout_weight="4"
+                android:background="#FFF3F3F3"
+                android:textColor="#FF000000"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Icono"
+                android:id="@+id/textView5"
+                android:layout_weight="2"
+                android:background="#FFF3F3F3"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#FF000000"/>
 
         </LinearLayout>
     </LinearLayout>
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="#FFF3F3F3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#FFF3F3F3">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -119,6 +167,7 @@
             android:layout_margin="0dp"
             android:onClick="btnLogin"
             android:background="#FFF3F3F3"/>
-        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>
+
 
