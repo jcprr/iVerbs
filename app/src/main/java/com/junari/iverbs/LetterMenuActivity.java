@@ -1,7 +1,6 @@
 package com.junari.iverbs;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,20 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MenuActivity extends Activity {
+public class LetterMenuActivity extends Activity {
 
-    private static final int REQST_CODE = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_letters_menu);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_letter_menu, menu);
         return true;
     }
 
@@ -41,17 +39,5 @@ public class MenuActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void accionBoton(View view) {
-        switch (view.getId()) {
-            case R.id.btnOp1:
 
-                startActivityForResult(new Intent(this, LetterMenuActivity.class), REQST_CODE);
-                break;
-
-            default:
-            break;
-        }
-
-
-    }
 }
